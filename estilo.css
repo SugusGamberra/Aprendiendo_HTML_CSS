@@ -1,0 +1,26 @@
+/* Creación del estilo en .css */
+
+h1 {
+    color:aquamarine;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    background-color: lightblue;
+}
+
+h3{
+    color:coral;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+strong {
+    color: darkorange;
+    font-weight: bold;
+    font-size: large;}
+
+body {
+    background-color: rgb(112, 103, 103);
+    font-family: 'Times New Roman', Times, serif;
+}
+
