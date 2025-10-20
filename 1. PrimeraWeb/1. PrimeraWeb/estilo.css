@@ -19,8 +19,11 @@ strong {
     font-weight: bold;
     font-size: large;}
 
+/* Degradado de fondo
+color fijo background-color , degradado background */
+
 body {
-    background-color: rgb(112, 103, 103);
+    background: linear-gradient(to right bottom, #ffecd2, #fc9fe8);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -30,6 +33,67 @@ h5 {
 }
 
 img {
-    border: 2px solid black;
+    border: 2px solid rgb(143, 198, 214);
     border-radius: 10px;
+}
+
+/* Clase, llevan un . delante */
+.azul {
+    color: rgb(9, 255, 0);
+}
+
+/* ID, llevan # delante */
+
+#rojo {
+    color: red;
+}
+
+/* ID */
+#verde {
+    color: green;
+}
+
+#strong2 {
+    color: purple;
+    background-color: thistle;
+}
+
+/* Estilo para h1 bordes con prueba de bordes 
+
+solid linea completa
+dashed con rayitas
+doted con puntitos
+
+Se visualiza la mas especifica, o en su defecto, lo ultimo que sobreescribe lo primero
+
+Por eso definimos 2 bordes diferentes, para visualizar esto
+
+Tenemos que conocer el modelo de cajas de css*/
+
+#bordes {
+    border-style: solid;
+    border-color:rgb(143, 198, 214);
+    border-width: 5px;
+
+    border: 2px dashed rgb(9, 255, 0)
+
+    /* padding: superior, derecho, inferior, izquierdo */
+
+    padding: 10px 20px 30px 40px;
+    margin: 15px 25px 35px 45px;
+    padding: 20px; /*aplica a los 4 lados*/
+}
+
+#encabezadoPrincipal {
+    color: white;
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, black, blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: solid 4px rgb(202, 25, 149);
+    margin-bottom: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-style: italic;
 }
