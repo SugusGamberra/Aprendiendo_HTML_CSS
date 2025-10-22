@@ -1,0 +1,102 @@
+/* Mi CSS jeje me he inspirado en el estilo liquid glass del iphone */
+/* Asi que busque en codepen y encontre muchos ejemplos de como hacerlo  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(95, 172, 216), rgb(167, 199, 224));
+    background-image: url("https://images.wallpapersden.com/image/download/desktop-aesthetic-cool-pink-setup_bmZlZmqUmZqaraWkpJRmbmdsrWZlbWU.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+main.cv-container {
+    width: 800px;
+    max-width: 90%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(13px);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    text-align: left;
+    margin: 100px auto;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffffff94; 
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #fff;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+em {
+    color: #ffffff;
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+ul li {
+    padding-left: 10px;
+    position: relative;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+ul li::before {
+    content: "•";
+    color: #ffffff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+img {
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    object-fit: cover;
+    margin-bottom: 15px;
+}
