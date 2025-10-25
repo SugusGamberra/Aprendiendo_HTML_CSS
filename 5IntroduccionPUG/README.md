@@ -1,4 +1,4 @@
-# 🐶PUG🐶
+# 🐶PUG ![Pug](https://img.shields.io/badge/Pug-FFF?style=for-the-badge&logo=pug&logoColor=A86454) 🐶
 
 ## Qué es? 
 
