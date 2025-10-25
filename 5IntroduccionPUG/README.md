@@ -51,27 +51,27 @@ En nuestro package.json veremos todo lo que hemos instalado :P
 Como buenas prácticas buscamos tenerlo todo organizadito, así que desde VSC vamos a ir creando carpetitas, la estructura de carpetas y archivos se vería así:
 
 5introduccionPUG/
-├── node_modules/
-├── src/
-│   ├── app/
-│   │   ├── index.js (El cerebro de Express)
-│   │   └── router/
-│   │       └── router.js (El portero de las URLs)
-│   ├── public/
-│   │   ├── css/
-│   │   │   ├── style.css
-│   │   │   └── test.css
-│   │   ├── js/
-│   │   │   └── script.js
-│   │   └── templates/
-│   │       ├── components/
-│   │       │   ├── layout.pug
-│   │       │   └── test_include.pug
-│   │       ├── index.pug (El tutorial principal)
-│   │       └── user.pug (Ejemplo de herencia)
-│   └── server.js (El que arranca todo)
-├── package.json
-└── package-lock.json
+    node_modules/
+    src/
+        app/
+            index.js (El cerebro de Express)
+            router/
+                router.js (El portero de las URLs)
+        public/
+            css/
+                style.css
+                test.css
+            js/
+                script.js
+            templates/
+                components/
+                    layout.pug
+                    test_include.pug
+                index.pug (El tutorial principal)
+                user.pug (Ejemplo de herencia)
+        server.js (El que arranca todo)
+    package.json
+    package-lock.json
 
 ### server.js
 
