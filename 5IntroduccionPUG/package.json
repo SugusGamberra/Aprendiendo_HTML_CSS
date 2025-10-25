@@ -1,0 +1,20 @@
+{
+  "name": "5introduccionpug",
+  "version": "1.0.0",
+  "description": "Es un motor de plantilla de node.js (antiguamente se le conocia como jade) con el que escribiremos HTML con una sintaxis mucho mas sencilla y es facil de leer!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "npx nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10",
+    "pug": "^3.0.3"
+  }
+}

@@ -1,0 +1,202 @@
+// Pug funciona por etiquetas que no requieren de simbolitos pejigueras
+// Solo busca las etiquetas y las cierra automaticamente ;P
+
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        // Si te das cuenta abajo entre viewport y content no hay comillas, no aportan mucho!
+        // PUG es muy inteligente y sabe donde van las comillas y donde no :D
+        // Puedes usarlas, a veces es necesrio, x lo que no es una mala práctica usarla :3
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Introducción a PUG
+        link(rel="stylesheet" href="css/style.css")
+    body
+        h1 Introducción a PUG
+        p Vamos a aprender todo sobre PUG, un motor de plantillas para Node.js que nos permite generar HTML de forma sencilla y eficiente.
+        ul
+        li Es un motor de plantillas que queda super limpio :P
+        li Se puede modularizar todo y tener archivos pequeñitos y reutilizables :3
+        br
+        p Dentro de pug podemos usar variables :3
+        //- Este comentario está oculto btw, no se puede ver en el HTML final jiji
+        //-
+            Puedes ver que por más que busques en inspeccionar no aparece este comentario :D
+            Así que muchos besitos para tu cornea, por curiosón ò.ó
+        // Vamos a ver las variables como puse antes ñ.ñ Funciona con cualquier codigo JS que quieras integrarle :3
+        // Con el guion le indicamos que es una variable JS
+        - var text = "Este es un ejemplo de variables en pug ^^"
+        - var name = "Sugus"
+        // Para usarla podemos hacerlo de 2 formas:
+        h2= text
+        p Btw encantada! Soy #{name} :3 Me enamoré de pug porque literal tengo 2 pugs reales HAHAHAH (soy mas sencilla que el mecanismo de una patata)
+        
+        // Si quisiéramos aplicar estilosen css podemos hacerlo así:
+        p.my-color Mis pugs se llaman: 
+
+        // O declarando una variable jeje:
+        - var MyClasses = ["my-color", "my-font", "my-margin"]
+            ol
+            li(class=MyClasses) Zagara (la mayor)
+            li(class=MyClasses) Illidan (el peque)
+        
+        // Para los ids podemos hacerlo así:
+
+        p#id-text Este párrafo tiene un id aplicado desde PUG :3
+        p(id="id-text") clicameee!
+
+        // Vamos a añadir un script js externo :D
+        script(src="js/script.js")
+
+        // Veamos los switches ;3
+        // Los switches funcionan como control de flujo ^^
+        // Como switch no existe directamente en pug usamos case!
+        // No nos permite usar operadores de comparacion (>, <, >=, <=) solo igualdad estricta (===)
+        br
+        hr
+        br
+        
+        - var edad = 30
+
+        h2 Cases y whens en PUG (condicionales tipo switch)
+
+        case edad 
+            when 0
+                p 
+                    b No puedes pasar ò.ó
+            when 18
+                p 
+                    b Vale, puedes pasar :3
+            when 30
+                p
+                    b A ti te invito a una cervecita :D
+
+        // Ahora tocan los condicionales if, else if y else ;3
+        br
+        hr
+        br
+
+        h2 If pug
+
+        // Funcionan como en JS normal :3
+        // Aquí si podemos usar operadores de comparación xD
+
+        - var VIP = true
+        - var edad = 32
+
+        if edad >= 18
+            h3 Eres mayor de edad, pase caballere :D
+        else if VIP
+            h3 Eres VIP, pasas sin pagar uwu 
+        else 
+            h3 No eres vip ni eres mayor de edad, pague piso ò.ó
+        unless VIP 
+            h3 
+                b Mamaste, no eres VIP xd
+        
+        // Para modularizar código dentro de nuestro html en pug...
+        // Veremos los includes ;3
+        //
+        br
+        hr
+        br
+        
+        h2 Includes en Pug 
+        p Nos permite modularizar código de un archivo externo y traerlo aquí!
+
+        include components/test_include
+
+        // Herencias ;3
+        br
+        hr
+        br
+
+        h2 Herencias dentro de pug 
+
+        block otherText 
+            p 
+                small Este es un texto heredado ;3
+
+        p Nos permite tener un template padre y heredar de todos sus hijos!
+
+        // Iteraciones :D
+        br
+        hr
+        br
+        h2 Iteraciones ~
+
+        // Nos permite iterar elementos dentro de nuestro docu de pug
+        // Veremos como recorre una array
+        // Y veremos como recorre pares clave-valor ;3
+
+        - var arrDias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
+        - var obj = {"one":"a", "two":"b", "three":"c"}
+
+        ul 
+            each value, index in arrDias 
+                li #{index} #{value} 
+
+        ul 
+            each value, key in obj
+                li #{key}: #{value}
+
+        // Bucle while de toda la vida :3
+
+        br
+        hr
+        br
+        h2 Bucle While 
+        
+        - var counter = 0
+
+        ul 
+            while counter < 6
+                li=counter++
+
+        // Mixins
+        br
+        hr
+        br
+
+        h2 Mixins en pug 
+
+        p Son como las funciones en un lenguaje de programación :3
+        p De esta forma podemos tener códigos reusables :De
+
+        mixin listTareas 
+            ul 
+                li "comprar"
+                li "fregar"
+                li "lavadora"
+
+        +listTareas
+
+        mixin listLenguajes(language)
+            ul 
+                each value in language 
+                    li=value 
+
+        - var lang = ["C", "C++", "C#"]
+        - var lang2 = ["ruby", "elixir", "lua"]
+
+        +listLenguajes(lang)
+        +listLenguajes(lang2)
+        +listLenguajes(["python", "JAVA", "JS"])
+
+        mixin listText(text="Si le pongo un texto por default...")
+            h4 
+                i=text 
+            if block 
+                article 
+                    block 
+            else 
+                p No existen "block"
+
+        +listText("Hola mundooo")
+            h4 Esto seria el block
+
+        +listText 
+            h4 Para ver que pasa sin parametros (no aparece el hola mundo, pero si el default que le pusimos arriba)
+
+
+        a(href="https://github.com/pugjs/pug", target="_blank") Github de pug (no carga su web para poenrte la docu t.t)
