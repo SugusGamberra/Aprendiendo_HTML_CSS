@@ -1,0 +1,102 @@
+/* Hay 2 formas de trabajar el posicionamiento en CSS: 
+   1. Posicionamiento normal (static)
+   2. Posicionamiento flexible (flexbox)
+*/
+
+/* Posicionamiento normal 
+
+Es una forma de forzar los elementos a que se vean de una forma especifica.
+
+Nosotros crearemos diferentes bloques para usar posicionamiento, sobretodo posicionamiento flexible que es lo que vamos a usar
+
+Posicionamiento normal: manual*/
+
+* { /* El asterisco selecciona TODOS los elementos */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    color: blue;
+    display: inline; /* Todo esta por defecto en bloque, asi se pondria en linea. */
+    margin: 10px;
+}
+
+/* Posicionamiento flexible
+
+Se usan divs, que son cajas ficticias que usamos para organizar diferentes elementos.
+
+Haremos 4 botones para ejemplificarlo!*/
+
+.cajaExterna {
+    width: 500px;
+    padding: 10px;
+    background-color: lightpink;
+    display: flex; /* Aqui se define que usaremos posicionamiento flexible, lo pone todo en linea por defecto */
+    flex-direction: row; /* Direccion de las cajas internas, puede ser row (fila) o column (columna), lo pone auto en filas */
+    justify-content: center; /* Alineacion horizontal (eje x) de las cajas internas, puede ser:
+    - flex-start: Maximo espacio posible (como esta al principio)
+    - center: Centrado
+    - flex-end: Se pega al final
+    - space-between
+    - space-around: deja espacio izq derecha y centro */
+    align-items: center; /* Alineacion vertical de las cajas internas (eje y), puede ser:
+    - flex-start: Arriba
+    - center: Centrado
+    - flex-end: Abajo */
+}
+
+.cajaInterna {
+    width: 5%; /* Cada caja interna ocupara el 25% del ancho de la caja externa, se va ajustando */
+    padding: 10px;
+    background-color: lightblue;
+    border: solid 1px black;
+    margin: 2px; /* Margen entre cajas internas */
+}
+
+.perfil {
+    margin: 10%;
+    width: 70%;
+    height: auto;
+    background: linear-gradient(to right, white, rgb(209, 159, 255));
+    display: flex;
+    border: solid 1px rgb(209, 159, 255);
+}
+
+.imagen {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 90%;
+    border-radius: 50%; /* Hace la imagen redonda */
+    margin: 10px;
+}
+
+.texto {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombre {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(209, 159, 255);
+    margin: 10px;
+}
+
+.descripcion {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(209, 159, 255);
+    margin: 10px;
+}
