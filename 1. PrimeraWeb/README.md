@@ -2,28 +2,28 @@
 
 ## Estructura básica
 
-- <!DOCTYPE html> : Define el tipo de documento
-- <html lang="es"> : Indica el idioma que se usa
-- <head>...</head>: Información que le da al navegador (metadatos, titulo de la pestaña, enlaces al css...).
-- <body>...</body>: Lo que tú ves.
+- <! DOCTYPE html > : Define el tipo de documento
+- < html lang="es" > : Indica el idioma que se usa
+- < head >...</ head >: Información que le da al navegador (metadatos, titulo de la pestaña, enlaces al css...).
+- < body >...</ body >: Lo que tú ves.
 
 ## Etiquetas básicas
 
 - Textos:
-    - Títulos: <h1>...</h1> a <h6>...</h6>
-    - Párrafos: <p>...</p>
-    - Listas ordenadas: <ol> <li>...</li> <li>...</li> </ol> 
-    - Listas desordenadas: <ul> <li>...</li> <li>...</li> </ul> 
-- Enlaces: <a href="https://www.google.com/maps">Pulsa aqui para ver Google Maps</a>
-- Imágenes: <img src="...">
-- Estructura semántica: <header>, <nav>, <main>, <footer>, <section>.
-- Contenedores genéricos: <div>, <span>.
+    - Títulos: < h1 >...</ h1 > a < h6 >...</ h6 >
+    - Párrafos: < p >...</ p >
+    - Listas ordenadas: < ol > < li >...</ li > < li >...</ li > </ ol > 
+    - Listas desordenadas: < ul > < li >...</ li > < li >...</ li > </ ul > 
+- Enlaces: < a href="https://www.google.com/maps">Pulsa aqui para ver Google Maps</ a >
+- Imágenes: < img src="...">
+- Estructura semántica: < header >, < nav >, < main >, < footer >, < section >.
+- Contenedores genéricos: < div >, < span >.
 
 ## Comentarios
 
 Como en todos lados usamos los comentarios para organizar nuestro código y ayudarnos a nosotros mismos o si tenemos compis de equipo también les ayuda a entender lo que andas tramando, pillin ñ.ñ Aquí se escriben así:
 
-<!--Creación de nuestra primera web básica con HTML y CSS-->
+< !--Creación de nuestra primera web básica con HTML y CSS-->
 
 # FUNDAMENTOS CSS
 
@@ -31,7 +31,7 @@ Como en todos lados usamos los comentarios para organizar nuestro código y ayud
 
 Lo más recomendado, así que no mencionaré (aún) el resto: 
 
-- Hoja de estilos externa: Lo enlazas en el head <link rel="stylesheet" href="estilo.css">
+- Hoja de estilos externa: Lo enlazas en el head < link rel="stylesheet" href="estilo.css">
 
 ## Selectores básicos
 

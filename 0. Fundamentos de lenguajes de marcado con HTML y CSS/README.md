@@ -6,9 +6,9 @@
 
 Es el esqueleto de cualquier pagina web, define el contenido y su estructura (titulos, parrafos, enlaces...). Usa:
 
-- Etiquetas: <p> , <h1> , <a> , <img> , etc.
-- Elementos: Etiquetas de apertura <head> y de cierre </head>.
-- Atributos: Proporcionan info adicional a las etiquetas: src en <img> o href en <a>.
+- Etiquetas: < p > , < h1 > , < a > , < img > , etc.
+- Elementos: Etiquetas de apertura < head > y de cierre </ head >.
+- Atributos: Proporcionan info adicional a las etiquetas: src en < img > o href en < a >.
 
 ### CSS
 
