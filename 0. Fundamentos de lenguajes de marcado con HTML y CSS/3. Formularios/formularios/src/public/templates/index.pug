@@ -1,0 +1,59 @@
+extends components/layout
+
+block content 
+
+    main 
+        h1= title 
+        p Bienvenido al formulario de ejemplo! 
+
+        section 
+            h2 Busqueda con metodo get 
+            form(action="/buscar", method="GET") 
+                label(for="busqueda") Buscar: 
+                input(type="text", id="busqueda", name="busqueda", placeholder="Ej: gatitos")
+                button(type="submit") Buscar 
+        
+        section
+            h2 Envio de datos con metodo post 
+            form(action="/submit", method="POST") 
+                label(for="nombre") Nombre: 
+                input(type="text", id="nombre", name="nombre", placeholder="Tu nombre aquí", required)
+                br
+                label(for="email") Email: 
+                input(type="email", id="email", name="email", placeholder="Tu email aqui", required)
+                br
+                label(for="password") Contraseña: 
+                input(type="password", id="password", name="password", placeholder="Tu contraseña aqui", required)
+                br
+                label(for="bio") Biografía: 
+                textarea(id="bio", name="bio", rows="4", cols="30", placeholder="Cuéntanos sobre ti...")
+                br
+                label Opcion unica (radio):
+                div 
+                    input(type="radio", id="opcion1", name="opcion", value="opcion1", checked)
+                    label(for="opcion1") Me gustan las cocreta
+                div
+                    input(type="radio", id="opcion2", name="opcion", value="opcion2")
+                    label(for="opcion2") Me gustan los macarrones
+                br
+                label Opción multiple (checkbox):
+                div
+                    input(type="checkbox", id="check1", name="interesos", value="musica")
+                    label(for="check1") Música
+                div
+                    input(type="checkbox", id="check2", name="interesos", value="deportes")
+                    label(for="check2") Deportes
+                div
+                    input(type="checkbox", id="check3", name="interesos", value="tecnologia")
+                    label(for="check3") Tecnología
+                br
+                label(for="pais") País: 
+                select(id="pais", name="pais") 
+                    option(value="") --Selecciona tu país--
+                    option(value="es") España
+                    option(value="mx") México
+                    option(value="ar") Argentina
+                    option(value="cl") Chile
+                br
+                button(type="submit") Enviar Datos
+                button(type="reset") Resetear Formulario

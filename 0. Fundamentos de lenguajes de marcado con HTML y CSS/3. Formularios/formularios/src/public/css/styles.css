@@ -1,0 +1,162 @@
+/* Que dios me perdone pero amo muchisimo el liquid glass de apple
+asi que sorry not sorry hasta que no se me pase la obsesion no paro xd */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-image: url('/img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+section {
+  background: rgba(0, 0, 0, 0.301);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  font-family: inherit;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
+select option {
+  background: #333;
+  color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  accent-color: #c53364; 
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"] {
+  background: #c53364;
+  box-shadow: 0 2px 10px rgba(197, 51, 100, 0.4);
+}
+button[type="submit"]:hover {
+  background: #d6457a;
+  transform: translateY(-2px);
+}
+
+button[type="reset"] {
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: 10px;
+}
+button[type="reset"]:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.3);
+  color: #f0f0f0;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-x: auto;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

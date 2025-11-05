@@ -63,8 +63,8 @@ El curso está dividido en módulos. Iremos paso a paso, con explicaciones senci
 | **01** | Estructura básica y estilo | [LO BÁSICO](../1.%20PrimeraWeb/README.md) | ✅ Listo |
 | **02** | Semántica | [SEMÁNTICA](./1.%20Semántica/README.md) | ✅ Listo |
 | **03** | Layout flexible | [FLEXBOX](../6.%20Posicionamiento%20web/README.md) | ✅ Listo |
-| **04** | Formularios | [FORMULARIOS]() | ✅ Listo |
-| **05** | Layout | - | ⏳ Pendiente |
+| **04** | Formularios | [FORMULARIOS](./3.%20Formularios/README.md) | ✅ Listo |
+| **05** | Flujo y posicionamiento web | [POSICIONAMIENTO WEB](../7.%20Posicionamiento%20web/README.md) | ✅ Listo |
 | **06** | Posicionamiento básico | - | ⏳ Pendiente |
 | **07** | Buenas prácticas | - | ⏳ Pendiente |
 

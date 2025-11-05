@@ -1,19 +1,22 @@
 {
-  "name": "formularios",
+  "name": "posicionamientoweb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
-    "dev": "npx nodemon src/server.js"
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "SugusGamberra",
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0",
     "morgan": "^1.10.1",
     "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }

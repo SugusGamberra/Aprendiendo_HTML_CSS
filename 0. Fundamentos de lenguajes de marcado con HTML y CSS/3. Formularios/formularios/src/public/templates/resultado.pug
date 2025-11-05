@@ -1,0 +1,13 @@
+extends components/layout
+
+block content
+    main
+        h1= title
+    section
+        h3 Datos recibidos usando el método: 
+            strong= metodo
+
+        p (Estos son los datos que llegaron al 'req.query' o 'req.body')
+        pre
+            code= JSON.stringify(datos, null, 2)
+    a(href="/") &larr; Volver al inicio

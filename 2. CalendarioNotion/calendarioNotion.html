@@ -1,159 +1,177 @@
-<!-- Me he hecho un calendario HTML para insertarlo en Notion -->
-<!-- Dejo el código aquí por si le sirve a alguien jiji -->
-<!-- No me he querido complicar mucho: en vez de css he usado tailwinds para tuniarlo -->
-<!-- Resulta que Notion no acepta un código tan largo, así que he usado esta web para sacarlo como imagen :( -->
-<!-- https://htmlcsstoimage.com -->
+<!-- CALENDARIO EDITABLE!!!
+Me he hecho un calendario HTML para insertarlo en Notion ~~
+Dejo el código aquí por si le sirve a alguien jiji -->
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Horario Personal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
-        .fondo {
-            background: linear-gradient(135deg, #e0f7ff 0%, #ffffff 100%);
-        }
-        .cabeceraDias {
-            background-color: #a8d8ea;
-            border-radius: 12px 12px 0 0;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Calendario Liquid Glass</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-['Comic_Neue'] fondo min-h-screen py-8 px-4">
-    <div class="max-w-6xl mx-auto">
+<body>
 
-        <!-- Título -->
-        <div class="flex items-center justify-center mb-8">
-            <div class="bg-white p-6 rounded-full shadow-lg">
-                <h1 class="text-4xl font-bold text-blue-400 text-center">Horario Personal</h1>
-            </div>
-            
+    <main class="calendar-container">
+        <header class="calendar-header">
+            <h1>Horario Semanal</h1>
+            <nav class="calendar-nav">
+                <button class="nav-btn">&lt;</button> <!--Esto es para flexear los botones pero no funcionan HAHAHAH adelantando cosillas uwu-->
+                <span class="nav-date">Hobbies, estudios y salud</span>
+                <button class="nav-btn">&gt;</button>
+                <button class="nav-today">Hoy</button>
+            </nav>
+        </header>
+
+        <div class="calendar-grid">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                    </tr>
+                </thead>
+                        <th>13:00</th>
+                        <td></td> <!--Lunes-->
+                        <td></td> <!--Martes-->
+                        <td></td> <!--Miércoles-->
+                        <td></td> <!--Jueves-->
+                        <td></td> <!--Viernes-->
+                        <td></td> <!--Sábado-->
+                        <td></td> <!--Domingo-->
+                    </tr>
+                    <tr>
+                        <th>14:00</th>
+                        <td class_name="has-event">
+                            <div class="event" style="height: 190px;">
+                                <div class="event-title">Sesión Pomodoro</div>
+                                <div class="event-time">13:45 - 16:05</div>
+                            </div>
+                        </td>
+                        <td class_name="has-event">
+                            <div class="event" style="height: 190px;">
+                                <div class="event-title">Sesión Pomodoro</div>
+                                <div class="event-time">13:45 - 16:05</div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td class_name="has-event">
+                            <div class="event" style="height: 190px;">
+                                <div class="event-title">Sesión Pomodoro</div>
+                                <div class="event-time">13:45 - 16:05</div>
+                            </div>
+                        </td>
+                        <td class_name="has-event">
+                            <div class="event" style="height: 190px;">
+                                <div class="event-title">Sesión Pomodoro</div>
+                                <div class="event-time">13:45 - 16:05</div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td class_name="has-event">
+                            <div class="event" style="height: 190px;">
+                                <div class="event-title">Sesión Pomodoro</div>
+                                <div class="event-time">13:45 - 16:05</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>15:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>16:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>17:00</th>
+                        <td></td>
+                        <td></td>
+                        <td class_name="has-event">
+                            <div class="event" style="height: 130px;">
+                                <div class="event-title">GYM</div>
+                                <div class="event-time">17:00 - 18:30</div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td class_name="has-event">
+                            <div class="event" style="height: 130px;">
+                                <div class="event-title">GYM</div>
+                                <div class="event-time">17:00 - 18:30</div>
+                            </div>
+                        </td>
+                        <td class_name="has-event">
+                            <div class="event" style="height: 130px;">
+                                <div class="event-title">GYM</div>
+                                <div class="event-time">17:00 - 18:30</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>18:00</th>
+                        <td class_name="has-event">
+                            <div class="event short">
+                                <div class="event-title">Tocar la guitarra</div>
+                                <div class="event-time">18:30 - 19:00</div>
+                            </div>
+                        </td>
+                        <td class_name="has-event">
+                            <div class="event short">
+                                <div class="event-title">Tocar la guitarra</div>
+                                <div class="event-time">18:30 - 19:00</div>
+                            </div></td>
+                        <td></td>
+                        <td class_name="has-event">
+                            <div class="event short">
+                                <div class="event-title">Tocar la guitarra</div>
+                                <div class="event-time">18:30 - 19:00</div>
+                            </div>
+                        </td>
+                        <td class_name="has-event">
+                            <div class="event short">
+                                <div class="event-title">Tocar la guitarra</div>
+                                <div class="event-time">18:30 - 19:00</div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>19:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+    </main>
 
-        <!-- Cuadrícula del calendario -->
-        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
-
-            <!-- Cabecera de los días de la semana -->
-            <div class="grid grid-cols-7 gap-0">
-                <div class="cabeceraDias p-3 text-center text-white font-bold">Lunes</div>
-                <div class="cabeceraDias p-3 text-center text-white font-bold">Martes</div>
-                <div class="cabeceraDias p-3 text-center text-white font-bold">Miércoles</div>
-                <div class="cabeceraDias p-3 text-center text-white font-bold">Jueves</div>
-                <div class="cabeceraDias p-3 text-center text-white font-bold">Viernes</div>
-                <div class="cabeceraDias p-3 text-center text-white font-bold">Sábado</div>
-                <div class="cabeceraDias p-3 text-center text-white font-bold">Domingo</div>
-            </div>
-
-            <!-- Franjas horarias -->
-                        <!-- Lunes-->
-
-            <div class="grid grid-cols-7 gap-0">
-                <div class="franjasHorarias border-r border-blue-100 min-h-96">
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">07:40 - 07:49 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">08:00 - 10:20 | Sesión Pomodoro</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">10:30 - 11:00 | Tocar la guitarra</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">11:55 - 12:25 | Maquillarme</div>
-                    <div class="p-2 h-24 border-b border-blue-50"></div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">19:30 - 22:00 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:34 - 21:44 | Desconexión digital</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:50 - 22:14 | Desmaquillarme y rulos</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">22:20 - 22:26 | Preparar ropa</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-pink-400 font-bold">22:37 | ¡A dormir!</div>
-                </div>
-
-                        <!-- Martes-->
-
-                <div class="franjasHorarias border-r border-blue-100 min-h-96">
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">07:40 - 07:49 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">08:00 - 10:20 | Sesión Pomodoro</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">10:30 - 11:00 | Tocar la guitarra</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">11:55 - 12:25 | Maquillarme</div>
-                    <div class="p-2 h-24 border-b border-blue-50"></div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">19:30 - 22:00 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:34 - 21:44 | Desconexión digital</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:50 - 22:14 | Desmaquillarme y rulo</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">22:20 - 22:26 | Preparar ropa</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-pink-400 font-bold">22:37 | ¡A dormir!</div>
-                </div>
-
-                        <!-- Miércoles-->
-
-                <div class="franjasHorarias border-r border-blue-100 min-h-96">
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">07:40 - 07:49 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50"></div>
-                    <div class="p-2 h-24 border-b border-blue-50"></div>
-                    <div class="p-2 h-24 border-b border-blue-50"></div>
-                    <div class="p-2 h-24 border-b border-blue-50"></div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">19:30 - 22:00 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:34 - 21:44 | Desconexión digital</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:50 - 22:14 |  Ruloos</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">22:20 - 22:26 | Preparar ropa</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-pink-400 font-bold">22:37 | ¡A dormir!</div>
-                </div>
-
-                        <!-- Jueves-->
-
-                <div class="franjasHorarias border-r border-blue-100 min-h-96">
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">07:40 - 07:49 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">08:00 - 10:20 | Sesión Pomodoro</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">10:30 - 11:00 | Tocar la guitarra</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">11:55 - 12:25 | Maquillarme</div>
-                    <div class="p-2 h-24 border-b border-blue-50"></div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">19:30 - 22:00 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:34 - 21:44 | Desconexión digital</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:50 - 22:14 | Desmaquillarme y rulo</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">22:20 - 22:26 | Preparar ropa</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-pink-400 font-bold">22:37 | ¡A dormir!</div>
-                </div>
-
-                        <!-- Viernes-->
-
-                <div class="franjasHorarias border-r border-blue-100 min-h-96">
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">07:40 - 07:49 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">08:00 - 10:20 | Sesión Pomodoro</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">10:30 - 11:00 | Tocar la guitarra</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">11:55 - 12:25 | Maquillarme</div>
-                    <div class="p-2 h-24 border-b border-blue-50"></div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">19:30 - 22:00 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:34 - 21:44 | Desconexión digital</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:50 - 22:14 | Desmaquillarme y rulo</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">22:20 - 22:26 | Preparar ropa</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-pink-400 font-bold">22:37 | ¡A dormir!</div>
-                </div>
-
-                        <!-- Sábado-->
-
-                <div class="franjasHorarias border-r border-blue-100 min-h-96">
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">07:40 - 07:49 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">08:00 - 10:20 | Sesión Pomodoro</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">10:30 - 11:00 | Tocar la guitarra</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">11:55 - 12:25 | Maquillarme</div>
-                    <div class="p-2 h-24 border-b border-blue-50"></div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">19:30 - 22:00 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:34 - 21:44 | Desconexión digital</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:50 - 22:14 | Desmaquillarme y rulo</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">22:20 - 22:26 | Preparar ropa</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-pink-400 font-bold">22:37 | ¡A dormir!</div>
-                </div>
-
-                        <!-- Domingo-->
-
-                <div class="franjasHorarias min-h-96">
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">07:40 - 07:49 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">08:00 - 10:20 | Sesión Pomodoro</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">10:30 - 11:00 | Tocar la guitarra</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">11:55 - 12:25 | Maquillarme</div>
-                    <div class="p-2 h-24 border-b border-blue-50"></div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">19:30 - 22:00 | Sacar a Zagara</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:34 - 21:44 | Desconexión digital</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">21:50 - 22:14 | Desmaquillarme y rulo</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-blue-400 font-medium">22:20 - 22:26 | Preparar ropa</div>
-                    <div class="p-2 h-24 border-b border-blue-50 flex items-center justify-center text-pink-400 font-bold">22:37 | ¡A dormir!</div>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>

@@ -1,0 +1,41 @@
+extends components/layout
+
+block content 
+    #pantallaCompleta
+    
+        #panelConversaciones 
+            .elementoConversacionPanel 
+                img.fotoElemento(src="../img/pfp1.jpg")
+                .nombreElementoConversacionPanel 
+                    h4.nombreElemento Sidaki
+            
+            .elementoConversacionPanel 
+                img.fotoElemento(src="../img/pfp2.jpg")
+                .nombreElementoConversacionPanel 
+                    h4.nombreElemento Dia Rei 
+            
+            .elementoConversacionPanel 
+                img.fotoElemento(src="../img/pfp3.jpg")
+                .nombreElementoConversacionPanel 
+                    h4.nombreElemento Gotik Qlona
+        
+        #ConversacionDetalle
+            #CabeceraDetalle 
+                #fotoCabecera
+                    img.fotoElementoCabecera(src="../img/pfp3.jpg")
+                #textoCabecera 
+                    #nombreDetalle 
+                        h4.nombreElemento Gotik Qlona 
+                    #ultConexionDetalle 
+                        p Ult. Conexión: Ayer 
+            #TextoDetalle
+
+            // Nos hemos quedado por aquí!!!
+            // En la próxima clase se sigue jeje :3
+
+            
+    // Esta es mi firma :3
+    footer.github-footer.fade-in-up(style="animation-delay: 0.5s;")
+        a.footer__inner(href="https://github.com/sugusgamberra" target="_blank")
+            img.github-pfp(src="https://avatars.githubusercontent.com/u/125316695?v=4", alt="Github PFP")
+            span @sugusgamberra
