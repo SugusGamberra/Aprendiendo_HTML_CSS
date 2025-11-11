@@ -24,11 +24,12 @@
 | :--- | :--- | :---: |
 | [`0. Fundamentos de lenguajes de marcado`](./0.%20Fundamentos%20de%20lenguajes%20de%20marcado%20con%20HTML%20y%20CSS/) | Conceptos básicos y semántica en HTML | ⏳ Actualizándose casi a diario ;D |
 | [`1. Primera web`](./1.%20PrimeraWeb/) | Tu primer proyecto web: estructura HTML y estilo CSS | ✅ |
-| [`2. calendario notion`](2.%20CalendarioNotion/) | Calendario para incluir en notion | ⏳ En desarrollo |
-| [`3. cv pgl (practica clases)`](./3.%20CV%20PGL%20(práctica%20de%20clases)/) | CV con diseño inspirado en Liquid Glass | ✅ |
-| [`4. cv template`](./4.%20CV%20template%20(para%20que%20te%20lo%20customices%20tu%20jeje)/) | Plantilla personalizable de currículum web estilo Liquid Glass | ✅ |
+| [`2. CV PGL (practica clases)`](./2.%20CV%20PGL%20(práctica%20de%20clases)/) | CV inspirado en el diseño liquid glass | ✅ |
+| [`3. CV Template`](./3.%20CV%20template%20(para%20que%20te%20lo%20customices%20tu%20jeje)/) | Plantilla hecha por mi estilo Liquid Glass | ✅ |
+| [`4. Flexbox`](./4.%20Flexbox/) | Flexbox | ✅ |
 | [`5. introduccionPUG`](./5IntroduccionPUG/) | Primeros pasos con el preprocesador Pug 🧱 | ✅ |
-| [`6. posicionamiento web`](./6.%20Posicionamiento%20web/) | Posicionamiento web | ✅ |
+| [`6. Posicionamiento web`](./6.%20Posicionamiento%20web/) | Posicionamiento web | ✅ |
+| [`3. Formularios`](0.%20Fundamentos%20de%20lenguajes%20de%20marcado%20con%20HTML%20y%20CSS/3.%20Formularios/) | Formularios: Todo lo que necesitas saber | ✅ |
 
 ---
 

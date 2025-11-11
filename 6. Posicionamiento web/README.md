@@ -115,5 +115,9 @@ El 99%, por no decir el 100%, de layouts se hacen con estos 2 módulos.
 
 ---
 
+# FORMULARIOS!!
+
+Para ver la explicación completa junto a su ejemplo ve a esta carpeta: [3. Formularios](../0.%20Fundamentos%20de%20lenguajes%20de%20marcado%20con%20HTML%20y%20CSS/3.%20Formularios/)
+
 > 📌 En conclusión... `float` para imagenes flotantes, `position` para detalles pequeños como pop-ups o menuses fijos, y `flex` y `grid` para todo xd
 > 🩷 Y yastaria!! A disfrutar creandoooo ;P

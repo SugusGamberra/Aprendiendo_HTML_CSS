@@ -29,9 +29,31 @@ block content
                     #ultConexionDetalle 
                         p Ult. Conexión: Ayer 
             #TextoDetalle
+                .fotoDetalle 
+                    img.img_fotoDetalle(src="../img/gato.jpg")
+                .parrafoDetalle 
+                    p Holiwi soy el gato hecker deme sus datos 🫦
+                
+                br
 
-            // Nos hemos quedado por aquí!!!
-            // En la próxima clase se sigue jeje :3
+                // LO DE FORMULARIOS SE VE MEJOR EN [FUNDAMENTOS - FORMULARIOS]
+                // Incluido lo que pregunto jesus en clases esta alli :3
+
+                .formulario
+                    h2 Formulario hecker uwu
+                    form(action="/procesar.php" method="post")
+                        label(for="nombreUsuario") 
+                            p Introduzca su nombre
+                            p.form-ayuda Recuerde borrar el campo de ejemplo para introducir su nombre
+                            br  
+                        input(type="text" id="nombreUsuario" name="nombreUsuario" value="Ejemplo: Juan")
+                            
+                        input(type="password" id="contraseña" name="contraseña")
+                        input(type="number" id="número" name="número")
+
+                        input(type="submit" value="Enviar")
+                        input(type="reset" value="Borrar formulario")
+                        input(type="button" value="Otra accion")
 
             
     // Esta es mi firma :3
