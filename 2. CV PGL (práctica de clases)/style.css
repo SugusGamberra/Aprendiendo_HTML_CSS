@@ -1,102 +1,101 @@
-/* Mi CSS jeje me he inspirado en el estilo liquid glass del iphone */
-/* Asi que busque en codepen y encontre muchos ejemplos de como hacerlo  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    /* Modo Claro y Predeterminaod*/
+    --bg-image: url('https://images.pexels.com/photos/17173413/pexels-photo-17173413/free-photo-of-naturaleza-tiempo-cielo-azul-atmosfera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    --glass-bg: rgba(255, 255, 255, 0.4);
+    --text-color: #2c3e50;
+    --accent-color: #3c83cb;
+    --border-color: rgba(255, 255, 255, 0.5);
+    --sub-text: rgba(0, 0, 0, 0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Modo Oscuro*/
+        --bg-image: url('https://images.unsplash.com/photo-1641108711198-cf1696cb16f8?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        --glass-bg: rgba(0, 0, 0, 0.4);
+        --text-color: #ffffff;
+        --accent-color: #74b9ff;
+        --border-color: rgba(255, 255, 255, 0.1);
+        --sub-text: rgba(255, 255, 255, 0.8);
+    }
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    border: none;
-    outline: none;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
 }
 
 body {
     min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(rgb(95, 172, 216), rgb(167, 199, 224));
-    background-image: url("https://images.wallpapersden.com/image/download/desktop-aesthetic-cool-pink-setup_bmZlZmqUmZqaraWkpJRmbmdsrWZlbWU.jpg");
+    background: var(--bg-image) no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
 }
 
-main.cv-container {
-    width: 800px;
-    max-width: 90%;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(13px);
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.cv-container {
+    width: 100%;
+    max-width: 850px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
     padding: 40px;
-    text-align: left;
-    margin: 100px auto;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: var(--text-color);
 }
 
-h1 {
-    font-size: 2.8em;
-    font-weight: 700;
+.cv-header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-h2 {
-    font-size: 1.8em;
-    font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #ffffff94; 
-    color: #fff;
-}
-
-h3 {
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #fff;
-}
-
-p {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    color: rgba(255, 255, 255, 0.85);
-}
-
-em {
-    color: #ffffff;
-    font-style: normal;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 20px;
-    margin-left: 0;
-}
-
-ul li {
-    padding-left: 10px;
-    position: relative;
-    margin-bottom: 8px;
-    text-align: left;
-}
-
-ul li::before {
-    content: "•";
-    color: #ffffff;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
-
-img {
+.profile-img {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 4px solid rgba(255, 255, 255, 0.5);
+    border: 4px solid var(--accent-color);
     object-fit: cover;
     margin-bottom: 15px;
 }
+
+h1 { font-size: 2.2rem; margin-bottom: 5px; }
+.subtitle { color: var(--accent-color); font-weight: 600; margin-bottom: 15px; }
+
+.glass-section {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+h2 {
+    font-size: 1.4rem;
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
+h3 { margin-top: 10px; font-size: 1.1rem; }
+
+p, li { color: var(--sub-text); line-height: 1.6; font-size: 0.95rem; }
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+a { color: var(--accent-color); text-decoration: none; font-weight: 600; }
+a:hover { text-decoration: underline; }
+
+ul { list-style: none; }
+ul li::before { content: "• "; color: var(--accent-color); font-weight: bold; }

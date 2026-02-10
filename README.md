@@ -1,7 +1,7 @@
 # 🎨 Lenguajes de marcado: HTML, CSS y Pug  
 ![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=for-the-badge) ![CSS Badge](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff&style=for-the-badge) ![Pug Badge](https://img.shields.io/badge/Pug-A86454?logo=pug&logoColor=fff&style=for-the-badge)
 
-> 💫 Bienvenida al repositorio de **Lenguajes de Marcado**  
+> 💫 Bienvenido al repositorio de **Lenguajes de Marcado**  
 > Aquí aprenderás a **estructurar, diseñar y dar vida visual** a tus proyectos web con **HTML5**, **CSS3** y el preprocesador **Pug**.  
 > Todo está explicado de forma sencilla y con ejemplos prácticos para que vayas construyendo tus propias webs desde cero 🚀
 
